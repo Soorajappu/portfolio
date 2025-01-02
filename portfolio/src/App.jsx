@@ -1,8 +1,7 @@
-import Contact from "./components/Contact"
-import Home from "./components/Home"
 import Navbar from "./components/Navbar"
-import Skills from "./components/Skills"
-import Work from "./components/Work"
+import Resume from "./components/Resume"
+import Index from "./components/Index"
+import { Routes, Route, BrowserRouter } from "react-router-dom"
 
 
 function App() {
@@ -10,11 +9,13 @@ function App() {
 
   return (
     <>
-        <Navbar />
-        <Home />
-        <Skills />
-        <Work />
-        <Contact />
+        <BrowserRouter>
+            <Navbar />
+            <Routes>
+                <Route path="/portfolio" element={<Index />} />
+                <Route path="/portfolio/resume" element={<Resume />} />
+            </Routes>
+        </BrowserRouter>
     </>
   )
 }

@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assets/logo.png'
 import {Link} from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -92,9 +93,35 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                    <a className='flex justify-between items-center w-full text-gray-300' href="/">
+                    <RouterLink to='portfolio/resume' className='flex justify-between items-center w-full text-gray-300'>
                         Resume <BsFillPersonLinesFill size={30} />
+                    </RouterLink>
+                </li>
+            </ul>
+        </div>
+
+        {/* social icons */}
+        <div className='lg:hidden fixed flex-col top-[35%] left-0'>
+            <ul>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:bg-blue-500 bg-blue-600'>
+                    <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">
+                        Linkedin <FaLinkedin size={30} />
                     </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:bg-[#333333] bg-[#3b3b3b]'>
+                    <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/">
+                        Github <FaGithub size={30} />
+                    </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:bg-insta-gradient bg-insta-gradient'>
+                    <a className='flex justify-between items-center w-full text-gray-300' href="https://www.instagram.com/soorajkg22/">
+                        Instagram <FaInstagram size={30} />
+                    </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:bg-[#636c76] bg-[#565f69]'>
+                    <RouterLink to='portfolio/resume' className='flex justify-between items-center w-full text-gray-300'>
+                        Resume <BsFillPersonLinesFill size={30} />
+                    </RouterLink>
                 </li>
             </ul>
         </div>
