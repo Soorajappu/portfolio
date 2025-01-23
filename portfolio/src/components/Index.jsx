@@ -3,6 +3,7 @@ import Home from './Home'
 import Skills from './Skills'
 import Work from './Work'
 import Contact from './Contact'
+import Footer from './Footer'
 
 function Index() {
   return (
@@ -11,6 +12,7 @@ function Index() {
         <Skills />
         <Work />
         <Contact />
+        <Footer />
     </>
   )
 }
