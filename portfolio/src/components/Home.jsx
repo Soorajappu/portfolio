@@ -16,7 +16,7 @@ function Home() {
 
         {/* container */}
         <div className='max-w-[1000px] mx-auto px-[60px] flex flex-col justify-center h-full'>
-        <div className='p-4'>
+        <div className='p-4 mt-[60px]'>
             <img src={ProfilePhoto} alt="Profile Image" className='rounded-full mx-auto w-48 h-48 object-cover'/>
         </div>
             <p className='text-[#4ca3d8] text-3xl'>Hi, I'm Sooraj K G a passionate Python Django Developer.</p>
